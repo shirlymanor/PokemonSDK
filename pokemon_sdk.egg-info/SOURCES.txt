@@ -1,0 +1,12 @@
+README.md
+setup.py
+pokemon_sdk/__init__.py
+pokemon_sdk/generation.py
+pokemon_sdk/pokemon.py
+pokemon_sdk/setup.py
+pokemon_sdk/utils.py
+pokemon_sdk.egg-info/PKG-INFO
+pokemon_sdk.egg-info/SOURCES.txt
+pokemon_sdk.egg-info/dependency_links.txt
+pokemon_sdk.egg-info/requires.txt
+pokemon_sdk.egg-info/top_level.txt

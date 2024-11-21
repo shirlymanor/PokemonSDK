@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: pokemon-sdk
+Version: 0.1
+Summary: A Python SDK for the PokeAPI.
+Author: Shirly Manor
+Requires-Dist: requests
