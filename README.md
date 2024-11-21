@@ -32,9 +32,9 @@ pip install pokemon-sdk
 Or clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/pokemon-sdk.git
+git clone https://github.com/shirlymanor/pokemon-sdk.git
 cd pokemon-sdk
-pip install -r requirements.txt
+pip install .
 ```
 
 ## Usage
@@ -48,7 +48,7 @@ from pokemon_sdk import PokeAPI
 ### Initializing the Client
 
 ```python
-api = PokeAPI()
+sdk = PokeSDK()
 ```
 
 ### Fetching Pokémon Data
@@ -56,7 +56,7 @@ api = PokeAPI()
 Retrieve data for a specific Pokémon by name or ID:
 
 ```python
-pokemon = api.get_pokemon('pikachu')
+pokemon = sdk.get_pokemon('pikachu')
 print(pokemon)
 ```
 
@@ -89,7 +89,7 @@ print(pokemon)
 List all Pokémon with pagination support:
 
 ```python
-pokemon_list = api.list_pokemon(limit=20, offset=0)
+pokemon_list = sdk.list_pokemon(limit=20, offset=0)
 for pokemon in pokemon_list['results']:
     print(pokemon['name'])
 ```
@@ -106,21 +106,21 @@ previous_page = pokemon_list['previous']
 Retrieve data for a specific generation:
 
 ```python
-generation = api.get_generation(1)
+generation = sdk.get_generation(1)
 print(generation['name'])  # Output: "generation-i"
 ```
 
 List all generations:
 
 ```python
-generations = api.list_generations()
+generations = sdk.list_generations()
 for gen in generations['results']:
     print(gen['name'])
 ```
 
 ## Documentation
 
-For more detailed information, visit the [wiki pages](https://github.com/yourusername/pokemon-sdk/wiki) or check the docstrings within the code.
+For documentation, I used docstrings within the code.
 
 ## Contributing
 
