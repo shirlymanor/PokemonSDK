@@ -1,4 +1,4 @@
-from utils import api_get
+from .utils import api_get
 
 class GenerationClient:
     def __init__(self):

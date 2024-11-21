@@ -1,5 +1,5 @@
-from pokemon import PokemonClient
-from generation import GenerationClient
+from .pokemon import PokemonClient
+from .generation import GenerationClient
 
 class PokeSDK:
     '''
@@ -8,3 +8,5 @@ class PokeSDK:
     def __init__(self):
         self.pokemon = PokemonClient()
         self.generation = GenerationClient()
+    # Make PokeSDK available when importing from pokemon_sdk
+__all__ = ['PokeSDK']
