@@ -5,6 +5,8 @@ class PokemonClient:
         pass
 
     def get_pokemon(self,):
+       '''
+       Get the details of the pokemon by ID or Name'''
        endpoint='pokemon'
        data = api_get(endpoint)
        return data
