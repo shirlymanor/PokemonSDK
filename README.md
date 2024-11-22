@@ -89,16 +89,12 @@ print(pokemon)
 List all Pokémon with pagination support:
 
 ```python
-pokemon_list = sdk.list_pokemon(limit=20, offset=0)
-for pokemon in pokemon_list['results']:
-    print(pokemon['name'])
-```
-
-Navigate through pages:
-
-```python
-next_page = pokemon_list['next']
-previous_page = pokemon_list['previous']
+while True:
+    data = self.get_all_pokemons(limit=limit,offset=offset)
+    all_pokemons.extend(data['results'])
+    if data['next'] is None:
+        break
+    offset += limit
 ```
 
 ### Fetching Generation Data

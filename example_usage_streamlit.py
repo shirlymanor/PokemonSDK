@@ -1,5 +1,6 @@
-import streamlit as st
 from pokemon_sdk import PokeSDK
+import streamlit as st
+
 sdk = PokeSDK()
 st.title("PokeAPI SDK Example")
 
@@ -10,7 +11,7 @@ if st.button("Search"):
         pokemon = sdk.pokemon.get_pokemon(pokemon_name)
         st.balloons()
         st.write(f"You searched for: {pokemon_name}")
-        # Display basic information
+        ''' Display basic information'''
         
         # Display sprite
         if 'sprites' in pokemon and 'front_default' in pokemon['sprites']:
