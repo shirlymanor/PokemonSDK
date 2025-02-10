@@ -17,7 +17,7 @@ for ability in pikachu['abilities']:
 generation_list = client.generation.get_generations_list(limit=3,offset=0)
 for gen in generation_list['results']:
     print(gen['name'])
-
+# print name
 geneartion_i = client.generation.get_generation('generation-i')
 for species in geneartion_i['pokemon_species']:
     print(species['name'])
