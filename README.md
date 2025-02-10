@@ -26,7 +26,7 @@ A Python SDK for interacting with the [PokéAPI](https://pokeapi.co/docs/v2#poke
 Install the package via pip:
 
 ```bash
-pip install pokemon-sdk
+pip3 install pokemon-sdk
 ```
 
 Or clone the repository:
